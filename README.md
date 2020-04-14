@@ -46,4 +46,6 @@ Synchronization library :
     wait_condition(condition*): to go to wait state.
     signal_one(condition*): for signaling a waiting thread to start.
     signal_all(condition*): for signaling all wating threads to start.
-    stopcondition(condition*): for stopping condition variables. It unlocks all the locks and wats active for pthread_mutex. 
+    stopcondition(condition*): for stopping condition variables. It unlocks all the locks and wats active for pthread_mutex.
+    
+    Makefile: make will create a 'lsync' file which can be used as a library of all above functionalities.
