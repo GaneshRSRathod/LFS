@@ -29,7 +29,7 @@ Synchronization library :
      sleepunlock(sleeplock_t*): to release a sleeplock.
      stopsleeplock(sleeplock_t*): for stopping the sleeplock. It unlocks all the loocks and watis active for pthread_mutex.
      
- 4.Read Write Lock:
+  4.Read Write Lock:
     Read Write Lock is implemented using spinlock and pthread_mutex on shared structure rwlock.
     Functions:
     initrwlock(rwlock*): initializing read write lock.
@@ -39,7 +39,7 @@ Synchronization library :
     unlockexclusive(rwlock*): releasing writer lock.
     stoprwlock(rwlock*): for stopping read write lock. It unlocks all the locks and waits active for phtread_mutex.
     
-  5.Condition variables:
+   5.Condition variables:
     It is implemented using spinlock and pthread mutex on shared structure condition.
     Functions:
     initcondition(condition*): Initialising condition variable.
